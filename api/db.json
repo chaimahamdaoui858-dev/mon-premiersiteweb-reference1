@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "role": "Admin"
+    },
+    {
+      "id": "54e5",
+      "name": "chaima",
+      "email": "chaima@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "5505",
+      "name": "lina hamdaoui",
+      "email": "linahamdaoui@gmail.com",
+      "role": "Admin"
+    },
+    {
+      "id": "051e",
+      "name": "sami",
+      "email": "sami@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "b94f",
+      "name": "ahmed kallel",
+      "email": "ahmed@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "8e08",
+      "name": "yosra damak",
+      "email": "yosradamak@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "27f4",
+      "name": "AMINE damek",
+      "email": "aminedamek@gmail.com",
+      "role": "User"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Application de gestion des congés",
+      "description": "Système complet avec Laravel et Angular node.js boostrap",
+      "techStack": [
+        "Laravel",
+        "Angular",
+        "MySQL"
+      ],
+      "status": "en-cours",
+      "year": "2023",
+      "githubUrl": "https://github.com/example/conges",
+      "liveUrl": "https://conges.example.com"
+    },
+    {
+      "id": "2",
+      "title": "Portfolio React",
+      "description": "Portfolio dynamique avec React et Tailwind",
+      "techStack": [
+        "React",
+        "Tailwind",
+        "Vite"
+      ],
+      "status": "termine",
+      "year": "2024",
+      "githubUrl": "https://github.com/example/portfolio",
+      "liveUrl": ""
+    },
+    {
+      "id": "9070",
+      "title": "flutter ",
+      "description": "application mobile  study with me une application qui aider a  riviser ",
+      "techStack": [],
+      "status": "termine",
+      "year": "2025",
+      "githubUrl": "https://github.com/example/study",
+      "liveUrl": "https://study.example.com"
+    },
+    {
+      "id": "5fbd",
+      "title": "PORTFOLIO",
+      "description": "react local storage",
+      "techStack": [],
+      "status": "en-cours",
+      "year": "2025",
+      "githubUrl": "https://github.com/example/portfolio",
+      "liveUrl": "https://portfolio.example.com"
+    }
+  ]
+}

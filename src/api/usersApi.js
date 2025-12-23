@@ -1,0 +1,18 @@
+import axiosClient from './axiosClient';
+
+const RESOURCE = '/users';
+
+export async function getUsers() {
+  const res = await axiosClient.get(RESOURCE);
+  return res.data;
+}
+
+export async function createUser(user) {
+  const res = await axiosClient.post(RESOURCE, user);
+  return res.data;
+}
+
+export async function deleteUser(id) {
+  await axiosClient.delete(`${RESOURCE}/${id}`);
+  return true;
+}
