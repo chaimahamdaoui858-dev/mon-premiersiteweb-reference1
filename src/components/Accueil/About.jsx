@@ -10,51 +10,108 @@ import {
   FaMapMarkerAlt,
   FaCheckCircle,
   FaBriefcase,
+  FaReact,
+  FaAngular,
+  FaJava,
+  FaPhp,
+  FaJsSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaDocker,
+  FaGitAlt,
+  FaGithub,
+  FaAws,
+  FaGamepad,
+  FaChartBar,
 } from "react-icons/fa";
+import {
+  SiFlutter,
+  SiSpringboot,
+  SiLaravel,
+  SiDotnet,
+  SiMysql,
+  SiPostman,
+  SiIntellijidea,
+  SiUnity,
+  SiTalend,
+  SiDart,
+} from "react-icons/si";
+import Reveal from "../Commun/Reveal.jsx";
 
+// ─── Skills data: each item has icon + name + color ──────────────────
 const skills = [
   {
     title: "Programming Languages",
     icon: <FaCode />,
-    items: ["Java", "C#", "PHP", "JavaScript", "SQL", "HTML", "CSS"],
     color: "from-blue-500 to-cyan-500",
+    items: [
+      { name: "Java", icon: <FaJava />, iconColor: "#E76F00" },
+      { name: "C#", icon: <FaCode />, iconColor: "#68217A" },
+      { name: "PHP", icon: <FaPhp />, iconColor: "#777BB4" },
+      { name: "JavaScript", icon: <FaJsSquare />, iconColor: "#F7DF1E" },
+      { name: "SQL", icon: <FaDatabase />, iconColor: "#336791" },
+      { name: "HTML", icon: <FaHtml5 />, iconColor: "#E34F26" },
+      { name: "CSS", icon: <FaCss3Alt />, iconColor: "#1572B6" },
+    ],
   },
   {
     title: "Web / Mobile Development",
     icon: <FaMobile />,
-    items: [
-      "Flutter",
-      "Spring Boot",
-      "Laravel",
-      "Angular",
-      "React",
-      "ASP.NET MVC",
-    ],
     color: "from-purple-500 to-pink-500",
+    items: [
+      { name: "Flutter", icon: <SiFlutter />, iconColor: "#02569B" },
+      { name: "Spring Boot", icon: <SiSpringboot />, iconColor: "#6DB33F" },
+      { name: "Laravel", icon: <SiLaravel />, iconColor: "#FF2D20" },
+      { name: "Angular", icon: <FaAngular />, iconColor: "#DD0031" },
+      { name: "React", icon: <FaReact />, iconColor: "#61DAFB" },
+      { name: "ASP.NET", icon: <SiDotnet />, iconColor: "#512BD4" },
+    ],
   },
   {
     title: "Databases",
     icon: <FaDatabase />,
-    items: ["MySQL", "Oracle", "PL/SQL", "SQL Server"],
     color: "from-green-500 to-teal-500",
+    items: [
+      { name: "MySQL", icon: <SiMysql />, iconColor: "#4479A1" },
+      { name: "Oracle", icon: <FaDatabase />, iconColor: "#F80000" },
+      { name: "PL/SQL", icon: <FaDatabase />, iconColor: "#E48E00" },
+      { name: "SQL Server", icon: <FaServer />, iconColor: "#CC2927" },
+    ],
   },
   {
     title: "Tools",
     icon: <FaTools />,
-    items: ["Git", "GitHub", "Docker", "Postman", "VS Code", "IntelliJ IDEA"],
     color: "from-orange-500 to-red-500",
+    items: [
+      { name: "Git", icon: <FaGitAlt />, iconColor: "#F05032" },
+      { name: "GitHub", icon: <FaGithub />, iconColor: "#181717" },
+      { name: "Docker", icon: <FaDocker />, iconColor: "#2496ED" },
+      { name: "Postman", icon: <SiPostman />, iconColor: "#FF6C37" },
+      { name: "VS Code", icon: <FaCode />, iconColor: "#007ACC" },
+      { name: "IntelliJ", icon: <SiIntellijidea />, iconColor: "#FE315D" },
+    ],
   },
   {
     title: "Other Technologies",
     icon: <FaServer />,
-    items: ["Power BI", "Talend", "AWS", "Machine Learning", "Unity"],
     color: "from-indigo-500 to-purple-500",
+    items: [
+      { name: "Power BI", icon: <FaChartBar />, iconColor: "#F2C811" },
+      { name: "Talend", icon: <SiTalend />, iconColor: "#1675BC" },
+      { name: "AWS", icon: <FaAws />, iconColor: "#FF9900" },
+      { name: "Unity", icon: <SiUnity />, iconColor: "#222222" },
+      { name: "ML", icon: <FaServer />, iconColor: "#7B4FFF" },
+    ],
   },
   {
     title: "Languages",
     icon: <FaLanguage />,
-    items: ["Arabic", "French", "English"],
     color: "from-pink-500 to-rose-500",
+    items: [
+      { name: "Arabic", icon: <FaLanguage />, iconColor: "#059669" },
+      { name: "French", icon: <FaLanguage />, iconColor: "#2563EB" },
+      { name: "English", icon: <FaLanguage />, iconColor: "#DC2626" },
+    ],
   },
 ];
 
@@ -67,203 +124,185 @@ const strengths = [
   "Software architecture",
 ];
 
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="py-24 bg-white px-4 relative overflow-hidden">
+    <section className="py-24 section-shell px-4 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"></div>
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            About Me
+        {/* ── Header ────────────────────────────────────────────── */}
+        <Reveal className="text-center mb-16">
+          <span className="inline-block px-4 py-2 glass-card rounded-full text-sm font-semibold mb-4 text-blue-700">
+            {t("about.badge", "About Me")}
           </span>
 
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Who Am I?
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-display">
+            {t("about.title", "Who Am I?")}
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            I am a third-year Software Engineering and Information Systems
-            student at the International Institute of Technology of Sfax,
-            passionate about web development, mobile development, and innovative
-            software solutions.
+            {t("about.description")}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-lg p-8 border border-blue-100">
+        {/* ── Academic Profile Card ───────────────────────── */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Reveal className="glass-card-strong rounded-2xl p-8 border theme-border hover-float">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl shadow-lg">
                 <FaGraduationCap />
               </div>
-
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">
-                  Academic Profile
+                  {t("about.academic.title", "Academic Profile")}
                 </h3>
                 <p className="text-gray-600">
-                  Software Engineering and Information Systems
+                  {t("about.academic.subtitle")}
                 </p>
               </div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              I develop web and mobile applications using modern technologies
-              such as Flutter, Spring Boot, Laravel, Angular, React, ASP.NET
-              MVC, Unity, and MySQL. My goal is to contribute to real software
-              projects while strengthening my technical skills.
+              {t("about.academic.desc")}
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-700">
                 <FaMapMarkerAlt className="text-blue-600" />
-                <span>Sfax, Tunisia</span>
+                <span>{t("about.academic.location", "Sfax, Tunisia")}</span>
               </div>
-
               <div className="flex items-center gap-3 text-gray-700">
                 <FaBriefcase className="text-purple-600" />
-                <span>Looking for a Final Year Internship</span>
+                <span>{t("about.academic.internship", "Looking for a Final Year Internship")}</span>
               </div>
-
               <div className="flex items-center gap-3 text-gray-700">
                 <FaCheckCircle className="text-green-600" />
-                <span>Junior Full Stack / Mobile Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center text-white text-2xl shadow-lg">
-                <FaBriefcase />
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Internship Experience
-                </h3>
-                <p className="text-gray-600">
-                  International Institute of Technology
-                </p>
+                <span>{t("about.academic.role", "Junior Full Stack / Mobile Developer")}</span>
               </div>
             </div>
 
-            <div className="mb-5">
-              <h4 className="font-bold text-gray-900 text-lg">
-                Leave Management Web Application
+            <div className="mt-8 pt-6 border-t theme-border border-gray-200/50">
+              <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                <span className="w-8 h-px bg-gray-300"></span>
+                INTERESTS
               </h4>
-              <p className="text-sm text-gray-500">
-                Jul 27 – Sep 1, 2025 • Sfax, Tunisia
+              <p className="text-gray-700 text-sm leading-relaxed font-medium bg-gradient-to-r from-blue-500/10 to-purple-500/10 px-4 py-3 rounded-xl border border-blue-100/50 dark:border-blue-900/20">
+                Technology and programming <span className="text-blue-500 mx-1">|</span> Painting <span className="text-blue-500 mx-1">|</span> Music <span className="text-blue-500 mx-1">|</span> Competitions and challenges
               </p>
             </div>
-
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-700">
-                <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-                Completed a 5-week internship focused on developing a leave
-                management web application.
-              </li>
-
-              <li className="flex items-start gap-3 text-gray-700">
-                <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-                Developed REST APIs, role-based access control, and MySQL
-                database management.
-              </li>
-
-              <li className="flex items-start gap-3 text-gray-700">
-                <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-                Delivered dashboards for employees and HR managers with
-                notifications and leave tracking.
-              </li>
-            </ul>
-
-            <div className="flex flex-wrap gap-2 mt-6">
-              {["Laravel", "Angular", "MySQL", "REST API"].map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 rounded-full text-sm font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-8 mb-16 text-white">
+        {/* ── Relevant Skills Banner ───────────────────────────── */}
+        <Reveal className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-8 mb-16 text-white hover-float" delay={80}>
           <h3 className="text-3xl font-bold mb-6 text-center">
-            Relevant Skills
+            {t("about.skills.title", "Relevant Skills")}
           </h3>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {strengths.map((item, index) => (
+            {[0, 1, 2, 3, 4, 5].map((index) => (
               <div
                 key={index}
                 className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-3"
               >
                 <FaCheckCircle className="text-green-300 flex-shrink-0" />
-                <span className="font-medium">{item}</span>
+                <span className="font-medium">{t(`about.skills.items.${index}`)}</span>
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
 
+        {/* ═══════════════════════════════════════════════════════════
+            TECHNICAL SKILLS — ICON CARDS (PREMIUM DESIGN)
+            ═══════════════════════════════════════════════════════════ */}
         <div>
-          <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">
-              Technical Skills
+          <Reveal className="text-center mb-12">
+            <span className="inline-block px-4 py-2 glass-card rounded-full text-sm font-semibold mb-4 text-purple-700">
+              {t("about.tech.badge", "Tech Stack")}
+            </span>
+            <h3 className="text-4xl font-bold mb-3 font-display">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                {t("about.tech.title", "Technical Skills")}
+              </span>
             </h3>
-            <p className="text-gray-600 text-lg">
-              Technologies, tools, and languages used in my academic and
-              professional projects.
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+              {t("about.tech.subtitle")}
             </p>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((group, index) => (
-              <div
+              <Reveal
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+                className="glass-card rounded-2xl hover:shadow-2xl transition-all duration-500 overflow-hidden border theme-border group hover-float"
+                delay={index * 80}
               >
+                {/* ── Category header ──────────────────────────── */}
                 <div
-                  className={`bg-gradient-to-r ${group.color} p-5 text-white`}
+                  className={`bg-gradient-to-r ${group.color} p-5 text-white relative overflow-hidden`}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="bg-white/20 p-3 rounded-lg text-2xl">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                  <div className="relative z-10 flex items-center gap-3">
+                    <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl text-2xl">
                       {group.icon}
                     </div>
                     <h4 className="text-xl font-bold">{group.title}</h4>
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2">
+                {/* ── Icon grid ────────────────────────────────── */}
+                <div className="p-5">
+                  <div className="grid grid-cols-3 sm:grid-cols-4 gap-2.5">
                     {group.items.map((item, idx) => (
-                      <span
+                      <div
                         key={idx}
-                        className="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-blue-50 hover:text-blue-700 transition"
+                        className="group/card relative flex flex-col items-center justify-center gap-1.5 p-3 rounded-xl glass-card cursor-default
+                                   hover:border-purple-200 hover:shadow-lg hover:shadow-purple-100/60
+                                   transform hover:scale-108 hover:-translate-y-0.5
+                                   transition-all duration-300 ease-out"
                       >
-                        {item}
-                      </span>
+                        {/* Glow effect on hover */}
+                        <div
+                          className="absolute inset-0 rounded-xl opacity-0 group-hover/card:opacity-10 transition-opacity duration-300"
+                          style={{ backgroundColor: item.iconColor }}
+                        ></div>
+
+                        {/* Icon */}
+                        <span
+                          className="relative z-10 text-3xl transition-all duration-300 group-hover/card:scale-110 group-hover/card:drop-shadow-lg"
+                          style={{ color: item.iconColor }}
+                        >
+                          {item.icon}
+                        </span>
+
+                        {/* Name */}
+                        <span className="relative z-10 text-[11px] font-semibold text-gray-500 group-hover/card:text-gray-800 transition-colors duration-300 text-center leading-tight whitespace-nowrap">
+                          {item.name}
+                        </span>
+                      </div>
                     ))}
                   </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        {/* ── CTA ────────────────────────────────────────────────── */}
+        <Reveal className="mt-16 text-center" delay={120}>
           <a
             href="/projects"
-            className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover-float"
           >
             View My Projects
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

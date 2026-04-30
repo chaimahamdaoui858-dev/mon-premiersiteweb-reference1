@@ -11,9 +11,13 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import { sendEmail } from "../../Services/emailservice";
+import Reveal from "../Commun/Reveal.jsx";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [formValid, setFormValid] = useState({
     nom: false,
     email: false,
@@ -25,9 +29,9 @@ const ContactForm = () => {
   });
 
   const errorMessage = {
-    nom: "The full name must contain at least 3 characters",
-    email: "Please enter a valid email address",
-    message: "The message must contain at least 10 characters",
+    nom: t("contact.form.errors.name", "The full name must contain at least 3 characters"),
+    email: t("contact.form.errors.email", "Please enter a valid email address"),
+    message: t("contact.form.errors.message", "The message must contain at least 10 characters"),
   };
 
   const [formData, setFormData] = useState({
@@ -140,7 +144,7 @@ const ContactForm = () => {
     {
       icon: <FaMapMarkerAlt className="text-3xl" />,
       title: "Location",
-      content: "Sfax, Tunisia",
+      content: t("about.academic.location", "Sfax, Tunisia"),
       link: "#",
       color: "from-purple-500 to-pink-500",
     },
@@ -162,7 +166,7 @@ const ContactForm = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-24 relative overflow-hidden">
+    <section className="min-h-screen section-shell py-24 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
         <div className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -170,28 +174,27 @@ const ContactForm = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            Contact
+        <Reveal className="text-center mb-16">
+          <span className="inline-block px-4 py-2 glass-card rounded-full text-sm font-semibold mb-4 text-blue-700">
+            {t("contact.badge", "Contact")}
           </span>
 
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Contact Me
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-display">
+            {t("contact.title", "Contact Me")}
           </h2>
 
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A final year internship opportunity, a question or a project? Feel
-            free to contact me.
+            {t("contact.subtitle", "A final year internship opportunity, a question or a project? Feel free to contact me.")}
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1 space-y-6">
+          <Reveal className="lg:col-span-1 space-y-6">
             {contactInfo.map((info, index) => (
               <a
                 key={index}
                 href={info.link}
-                className="block bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="block glass-card rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover-float"
               >
                 <div
                   className={`w-16 h-16 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center text-white mb-4 shadow-lg`}
@@ -207,9 +210,9 @@ const ContactForm = () => {
               </a>
             ))}
 
-            <div className="bg-white rounded-2xl shadow-lg p-6">
+            <div className="glass-card rounded-2xl shadow-lg p-6 hover-float">
               <h3 className="font-bold text-gray-900 mb-4 text-lg">
-                Social Media
+                {t("contact.socialMedia", "Social Media")}
               </h3>
 
               <div className="flex gap-4">
@@ -228,18 +231,17 @@ const ContactForm = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-lg p-6 text-white">
-              <h3 className="font-bold mb-3 text-lg">💡 Availability</h3>
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-lg p-6 text-white hover-float">
+              <h3 className="font-bold mb-3 text-lg">{t("contact.availability.title", "💡 Availability")}</h3>
               <p className="text-white/90">
-                I am currently looking for a final year internship and available
-                to discuss new opportunities.
+                {t("contact.availability.text", "I am currently looking for a final year internship and available to discuss new opportunities.")}
               </p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="lg:col-span-2">
+          <Reveal className="lg:col-span-2" delay={120}>
             {formValid.sended && (
-              <div className="mb-8 bg-green-50 border-l-4 border-green-500 rounded-2xl shadow-lg overflow-hidden animate-fade-in">
+              <div className="mb-8 bg-green-50 border-l-4 border-green-500 rounded-2xl shadow-lg overflow-hidden animate-fade-in glass-card">
                 <div className="p-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -248,10 +250,10 @@ const ContactForm = () => {
 
                     <div>
                       <h3 className="text-xl font-bold text-green-800 mb-1">
-                        Message sent successfully! 🎉
+                        {t("contact.form.successTitle", "Message sent successfully! 🎉")}
                       </h3>
                       <p className="text-green-600">
-                        I will reply as soon as possible.
+                        {t("contact.form.successText", "I will reply as soon as possible.")}
                       </p>
                     </div>
                   </div>
@@ -259,13 +261,13 @@ const ContactForm = () => {
               </div>
             )}
 
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="glass-card-strong rounded-2xl shadow-2xl overflow-hidden">
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-8">
                 <h3 className="text-3xl font-bold text-white mb-2">
-                  Send Me a Message
+                  {t("contact.form.title", "Send Me a Message")}
                 </h3>
                 <p className="text-blue-100">
-                  Fill in the form below and I will get back to you soon.
+                  {t("contact.form.subtitle", "Fill in the form below and I will get back to you soon.")}
                 </p>
               </div>
 
@@ -276,7 +278,7 @@ const ContactForm = () => {
                     className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2"
                   >
                     <FaUser className="text-blue-600" />
-                    Full Name
+                    {t("contact.form.nameLabel", "Full Name")}
                   </label>
 
                   <input
@@ -293,7 +295,7 @@ const ContactForm = () => {
                           : "border-red-500 focus:ring-red-200 bg-red-50"
                         : "border-gray-300 focus:border-blue-500 focus:ring-blue-200"
                     }`}
-                    placeholder="Enter your full name"
+                    placeholder={t("contact.form.namePlaceholder", "Enter your full name")}
                     required
                   />
 
@@ -307,7 +309,7 @@ const ContactForm = () => {
                   {touched.nom && formValid.nom && (
                     <div className="flex items-center gap-2 mt-2 text-green-600 text-sm font-medium">
                       <FaCheckCircle />
-                      <span>Valid name ✓</span>
+                      <span>{t("contact.form.valid.name", "Valid name ✓")}</span>
                     </div>
                   )}
                 </div>
@@ -318,7 +320,7 @@ const ContactForm = () => {
                     className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2"
                   >
                     <FaEnvelope className="text-blue-600" />
-                    Email
+                    {t("contact.form.emailLabel", "Email")}
                   </label>
 
                   <input
@@ -335,7 +337,7 @@ const ContactForm = () => {
                           : "border-red-500 focus:ring-red-200 bg-red-50"
                         : "border-gray-300 focus:border-blue-500 focus:ring-blue-200"
                     }`}
-                    placeholder="your.email@gmail.com"
+                    placeholder={t("contact.form.emailPlaceholder", "your.email@gmail.com")}
                     required
                   />
 
@@ -349,7 +351,7 @@ const ContactForm = () => {
                   {touched.email && formValid.email && (
                     <div className="flex items-center gap-2 mt-2 text-green-600 text-sm font-medium">
                       <FaCheckCircle />
-                      <span>Valid email ✓</span>
+                      <span>{t("contact.form.valid.email", "Valid email ✓")}</span>
                     </div>
                   )}
                 </div>
@@ -360,7 +362,7 @@ const ContactForm = () => {
                     className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2"
                   >
                     <FaCommentDots className="text-blue-600" />
-                    Message
+                    {t("contact.form.messageLabel", "Message")}
                   </label>
 
                   <textarea
@@ -377,7 +379,7 @@ const ContactForm = () => {
                           : "border-red-500 focus:ring-red-200 bg-red-50"
                         : "border-gray-300 focus:border-blue-500 focus:ring-blue-200"
                     }`}
-                    placeholder="Write your message here..."
+                    placeholder={t("contact.form.messagePlaceholder", "Write your message here...")}
                     required
                   />
 
@@ -391,7 +393,7 @@ const ContactForm = () => {
                   {touched.message && formValid.message && (
                     <div className="flex items-center gap-2 mt-2 text-green-600 text-sm font-medium">
                       <FaCheckCircle />
-                      <span>Valid message ✓</span>
+                      <span>{t("contact.form.valid.message", "Valid message ✓")}</span>
                     </div>
                   )}
                 </div>
@@ -401,7 +403,7 @@ const ContactForm = () => {
                     htmlFor="priorité"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Message Priority
+                    {t("contact.form.priorityLabel", "Message Priority")}
                   </label>
 
                   <select
@@ -411,9 +413,9 @@ const ContactForm = () => {
                     value={formData.priorité}
                     className="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-300 cursor-pointer bg-white"
                   >
-                    <option value="high">🔴 High - Urgent</option>
-                    <option value="medium">🟡 Medium - Normal</option>
-                    <option value="low">🟢 Low - Not urgent</option>
+                    <option value="high">{t("contact.form.priorityHigh", "🔴 High - Urgent")}</option>
+                    <option value="medium">{t("contact.form.priorityMedium", "🟡 Medium - Normal")}</option>
+                    <option value="low">{t("contact.form.priorityLow", "🟢 Low - Not urgent")}</option>
                   </select>
                 </div>
 
@@ -429,22 +431,22 @@ const ContactForm = () => {
                   {formValid.sending ? (
                     <>
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
-                      <span>Sending...</span>
+                      <span>{t("contact.form.buttonSending", "Sending...")}</span>
                     </>
                   ) : (
                     <>
                       <FaPaperPlane />
-                      <span>Send Message</span>
+                      <span>{t("contact.form.buttonSend", "Send Message")}</span>
                     </>
                   )}
                 </button>
 
                 <p className="text-center text-sm text-gray-500">
-                  🔒 Your data is protected and will never be shared.
+                  {t("contact.form.privacyNotice", "🔒 Your data is protected and will never be shared.")}
                 </p>
               </form>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
 

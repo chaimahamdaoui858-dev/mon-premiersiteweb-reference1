@@ -1,0 +1,325 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Bonjour, je suis",
+    "name": "Chaima Hamdaoui",
+    "title": "Étudiante en Ingénierie Logicielle",
+    "description": "Passionnée par la création d'applications web et mobiles modernes avec un accent sur un code propre et l'expérience utilisateur.",
+    "viewProjects": "Voir mes projets",
+    "contactMe": "Me contacter",
+    "resume": "Télécharger le CV",
+    "lookingForInternship": "À la recherche d'un stage de fin d'études",
+    "roles": {
+      "fullstack": "Développeuse Full Stack Junior",
+      "mobile": "Développeuse Mobile",
+      "student": "Étudiante en Ingénierie Logicielle"
+    },
+    "stats": {
+      "projects": "Projets terminés",
+      "experience": "Années d'expérience",
+      "technologies": "Technologies",
+      "year": "Année Universitaire",
+      "internship": "Recherche de stage"
+    }
+  },
+  "about": {
+    "badge": "À propos de moi",
+    "title": "Qui suis-je ?",
+    "description": "Je suis étudiante en troisième année de Génie Logiciel et Systèmes d'Information à l'Institut International de Technologie de Sfax, passionnée par le développement web, le développement mobile et les solutions logicielles innovantes.",
+    "academic": {
+      "title": "Profil académique",
+      "subtitle": "Génie Logiciel et Systèmes d'Information",
+      "desc": "Je développe des applications web et mobiles en utilisant des technologies modernes telles que Flutter, Spring Boot, Laravel, Angular, React, ASP.NET MVC, Unity et MySQL. Mon objectif est de contribuer à des projets logiciels réels tout en renforçant mes compétences techniques.",
+      "location": "Sfax, Tunisie",
+      "internship": "À la recherche d'un stage de fin d'études",
+      "role": "Développeuse Full Stack / Mobile Junior"
+    },
+    "internship": {
+      "title": "Expérience de stage",
+      "subtitle": "Institut International de Technologie",
+      "projectTitle": "Application Web de Gestion des Congés",
+      "date": "27 juil. – 1 sept. 2025 • Sfax, Tunisie",
+      "tasks": [
+        "Stage de 5 semaines axé sur le développement d'une application web de gestion des congés.",
+        "Développement d'API REST, contrôle d'accès basé sur les rôles et gestion de base de données MySQL.",
+        "Livraison de tableaux de bord pour les employés et les responsables RH avec notifications et suivi des congés."
+      ]
+    },
+    "skills": {
+      "title": "Compétences pertinentes",
+      "items": [
+        "Développement d'API REST",
+        "Contrôle d'accès basé sur les rôles",
+        "Conception de bases de données",
+        "Développement d'interfaces mobiles",
+        "Test d'API avec Postman",
+        "Architecture logicielle"
+      ]
+    },
+    "tech": {
+      "badge": "Technologies",
+      "title": "Compétences techniques",
+      "subtitle": "Technologies, outils et langages que j'utilise pour donner vie à des idées."
+    },
+    "viewProjects": "Voir mes projets"
+  },
+  "experience": {
+    "badge": "Mon parcours",
+    "title": "Expérience et Formation",
+    "subtitle": "Mon parcours académique et professionnel.",
+    "professional": "Expérience Professionnelle",
+    "academic": "Formation Académique",
+    "trainings": "Certifications et Masterclasses",
+    "activities": "Activités Extrascolaires",
+    "jobs": [
+      {
+        "title": "Stage Professionnel",
+        "company": "All Soft Multimedia",
+        "location": "Sfax, Tunisie",
+        "date": "Fév 2026 – Présent",
+        "status": "Présent",
+        "subtitle": "Application Mobile de Services à Domicile",
+        "description": "Direction du développement d'une plateforme mobile full-stack reliant les clients et les prestataires de services.",
+        "achievements": [
+          "Conception d'une application mobile multiplateforme avec Flutter, intégrée à une API REST Spring Boot robuste.",
+          "Conception d'un système sécurisé basé sur les rôles pour les clients, les prestataires et les administrateurs.",
+          "Livraison de fonctionnalités clés : système de réservation, authentification, chat en temps réel (WebSocket), notifications et suivi en direct.",
+          "Intégration de Google Maps pour la géolocalisation, la navigation et le suivi en temps réel des prestataires.",
+          "Création d'un tableau de bord administrateur pour gérer les utilisateurs, valider les prestataires et suivre les réclamations."
+        ]
+      },
+      {
+        "title": "Stage Professionnel",
+        "company": "Institut International de Technologie",
+        "location": "Sfax, Tunisie",
+        "date": "27 juil. – 1 sept. 2025",
+        "status": "Terminé",
+        "subtitle": "Application Web de Gestion des Congés",
+        "description": "Stage de 5 semaines axé sur le développement d'une application web de gestion des congés pour les employés et les responsables RH.",
+        "achievements": [
+          "Développement d'API REST pour la gestion des demandes de congé.",
+          "Mise en œuvre du contrôle d'accès basé sur les rôles pour les employés et les responsables RH.",
+          "Gestion de la structure de la base de données MySQL et des données de l'application.",
+          "Livraison de tableaux de bord pour les employés et les responsables RH.",
+          "Ajout de notifications et suivi de 3 types de congés : maladie, vacances et congé personnel."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Génie Logiciel et Systèmes d'Information",
+        "institution": "Institut International de Technologie",
+        "location": "Sfax, Tunisie",
+        "period": "2023 – Présent",
+        "status": "3ème Année",
+        "description": "Formation axée sur le développement logiciel, les bases de données, les technologies web, le développement mobile, l'architecture logicielle, les systèmes d'information et l'apprentissage par projet.",
+        "highlights": [
+          "Développement logiciel",
+          "Développement web et mobile",
+          "Bases de données et systèmes d'information",
+          "Architecture logicielle"
+        ]
+      },
+      {
+        "degree": "Baccalauréat en Sciences Expérimentales",
+        "institution": "Lycée Gremda",
+        "location": "Sfax, Tunisie",
+        "period": "2023",
+        "status": "Terminé",
+        "description": "Baccalauréat scientifique offrant une base solide en pensée analytique et résolution de problèmes.",
+        "highlights": [
+          "Formation scientifique",
+          "Pensée analytique",
+          "Résolution de problèmes"
+        ]
+      }
+    ],
+    "certificationItems": [
+      {
+        "title": "AWS Academy Graduate – Cloud Foundations",
+        "institution": "AWS Academy",
+        "date": "20/12/2025",
+        "description": "Certification validant les fondamentaux du cloud computing, incluant les services essentiels d’AWS (EC2, S3, IAM), les concepts d’architecture cloud, ainsi que les bonnes pratiques de sécurité et de déploiement."
+      },
+      {
+        "title": "AI Tools for Coding",
+        "institution": "Formation Masterclass",
+        "date": "2026",
+        "description": "Formation axée sur l'utilisation d'outils d'IA pour améliorer le développement logiciel, y compris la génération de code, le débogage et l'amélioration de la productivité."
+      }
+    ],
+    "activityItems": [
+      {
+        "title": "Branche Étudiante IEEE",
+        "date": "2023 – Présent",
+        "description": "Participation à des événements techniques, ateliers et activités étudiantes à l'Institut International de Technologie de Sfax."
+      },
+      {
+        "title": "Club Village SOS",
+        "date": "2026",
+        "description": "Participation à des activités bénévoles et sociales."
+      }
+    ]
+  },
+  "projects": {
+    "badge": "Mon Portfolio",
+    "title": "Projets Récents",
+    "subtitle": "Découvrez mes projets récents en développement web, mobile et jeu vidéo.",
+    "buttonDemo": "Démo",
+    "buttonSource": "Source",
+    "buttonGallery": "Voir Galerie",
+    "galleryTitle": "Galerie du projet",
+    "list": [
+      {
+        "title": "Plateforme de Services à Domicile – App Mobile",
+        "description": "Une application mobile de services à domicile permettant aux clients de réserver des prestataires, suivre les positions, chatter en temps réel et recevoir des notifications.",
+        "status": "Projet de Fin d'Études",
+        "features": [
+          "Authentification avec rôles client, prestataire et administrateur",
+          "Flux de réservation de service à domicile",
+          "Chat en temps réel via WebSocket",
+          "Notifications push pour les messages et réservations",
+          "Suivi GPS et affichage d'itinéraire sur la carte",
+          "Tableau de bord administrateur pour la validation des prestataires"
+        ]
+      },
+      {
+        "title": "Application Web de Gestion des Congés",
+        "description": "Application web de gestion des congés développée lors d'un stage à l'IIT Sfax, avec gestion des rôles, tableaux de bord et notifications.",
+        "status": "Terminé",
+        "features": [
+          "Authentification et contrôle d'accès basé sur les rôles",
+          "Gestion des demandes de congé",
+          "Tableaux de bord pour employés et responsables RH",
+          "Suivi de 3 types de congés",
+          "Notifications et gestion des statuts"
+        ]
+      },
+      {
+        "title": "Centre Médical – Architecture Microservices",
+        "description": "Un système backend basé sur une architecture microservices pour la gestion des patients, médecins et rendez-vous.",
+        "status": "Terminé",
+        "features": [
+          "Architecture microservices",
+          "Découverte de services avec Eureka",
+          "Routage centralisé avec API Gateway",
+          "API REST pour la communication inter-services",
+          "Gestion des patients, médecins et rendez-vous"
+        ]
+      },
+      {
+        "title": "Application de Gestion de Pharmacie",
+        "description": "Application web de gestion de pharmacie pour gérer les médicaments, les ordonnances et les comptes utilisateurs.",
+        "status": "Terminé",
+        "features": [
+          "Gestion des médicaments",
+          "Gestion des ordonnances",
+          "Gestion des comptes utilisateurs",
+          "Opérations CRUD complètes",
+          "Architecture MVC"
+        ]
+      },
+      {
+        "title": "Study With Me – Application Mobile",
+        "description": "Application mobile conçue pour les étudiants afin de planifier les sessions d'étude et recevoir des rappels.",
+        "status": "Terminé",
+        "features": [
+          "Planification des sessions d'étude",
+          "Rappels et notifications",
+          "Interface mobile simple et intuitive",
+          "Organisation du temps d'étude"
+        ]
+      },
+      {
+        "title": "Jeu 3D Ball Runner",
+        "description": "Un jeu 3D développé avec Unity et C#, basé sur un gameplay runner avec obstacles, collecte d'objets et plusieurs niveaux.",
+        "status": "Terminé",
+        "features": [
+          "Mouvement de balle basé sur la physique",
+          "Obstacles et détection de collision",
+          "Collecte d'objets",
+          "Suivi du score",
+          "Plusieurs niveaux"
+        ]
+      },
+      {
+        "title": "Site Web Portfolio Personnel",
+        "description": "Un site web portfolio personnel développé avec React pour présenter mon profil, mes compétences, mes projets et mes coordonnées.",
+        "status": "En cours",
+        "features": [
+          "Page d'accueil professionnelle",
+          "Section Projets",
+          "Section Compétences",
+          "Formulaire de contact",
+          "Design responsive"
+        ]
+      },
+      {
+        "title": "Plateforme Éducative Interactive",
+        "description": "Une application web moderne développée avec React et Vite qui permet aux utilisateurs d'explorer des cours, de suivre leur progression et d'interagir avec des leçons dynamiques.",
+        "status": "Terminé",
+        "features": [
+          "Navigation et gestion des cours",
+          "Leçons interactives avec modales",
+          "Tableau de bord de suivi de progression",
+          "Support Mode sombre / clair",
+          "Système d'intégration pour nouveaux utilisateurs",
+          "Persistance des données avec LocalStorage"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "role": "Développeuse Full Stack / Mobile Junior",
+    "description": "Étudiante en troisième année d'ingénierie logicielle et systèmes d'information, passionnée par le développement web et mobile. À la recherche d'un stage de fin d'études pour contribuer à des solutions logicielles innovantes.",
+    "quickLinks": "Liens Rapides",
+    "contact": "Contact",
+    "rights": "© 2026 Chaima HAMDAOUI. Tous droits réservés.",
+    "madeWith": "Fait avec"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Me Contacter",
+    "subtitle": "Une opportunité de stage de fin d'études, une question ou un projet ? N'hésitez pas à me contacter.",
+    "socialMedia": "Réseaux Sociaux",
+    "availability": {
+      "title": "💡 Disponibilité",
+      "text": "Je suis actuellement à la recherche d'un stage de fin d'études et disponible pour discuter de nouvelles opportunités."
+    },
+    "form": {
+      "title": "M'envoyer un message",
+      "subtitle": "Remplissez le formulaire ci-dessous et je vous répondrai bientôt.",
+      "successTitle": "Message envoyé avec succès ! 🎉",
+      "successText": "Je répondrai dès que possible.",
+      "nameLabel": "Nom Complet",
+      "namePlaceholder": "Entrez votre nom complet",
+      "emailLabel": "Email",
+      "emailPlaceholder": "votre.email@gmail.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Écrivez votre message ici...",
+      "priorityLabel": "Priorité du message",
+      "priorityHigh": "🔴 Haute - Urgent",
+      "priorityMedium": "🟡 Moyenne - Normal",
+      "priorityLow": "🟢 Basse - Pas urgent",
+      "buttonSend": "Envoyer le message",
+      "buttonSending": "Envoi en cours...",
+      "privacyNotice": "🔒 Vos données sont protégées et ne seront jamais partagées.",
+      "errors": {
+        "name": "Le nom complet doit contenir au moins 3 caractères",
+        "email": "Veuillez entrer une adresse e-mail valide",
+        "message": "Le message doit contenir au moins 10 caractères"
+      },
+      "valid": {
+        "name": "Nom valide ✓",
+        "email": "Email valide ✓",
+        "message": "Message valide ✓"
+      }
+    }
+  }
+}

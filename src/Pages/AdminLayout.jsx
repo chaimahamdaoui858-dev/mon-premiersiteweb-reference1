@@ -25,7 +25,7 @@ export default function AdminLayout() {
   ];
 
   return (
-    <div className="min-h-screen flex bg-gray-50">
+    <div className="min-h-screen flex section-shell">
 
       {/* Sidebar Desktop */}
       <aside className="hidden lg:flex w-64 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white flex-col shadow-2xl">

@@ -9,18 +9,21 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const quickLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Experience", path: "/experience" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: t("nav.home", "Home"), path: "/" },
+    { name: t("nav.about", "About"), path: "/about" },
+    { name: t("nav.experience", "Experience"), path: "/experience" },
+    { name: t("nav.projects", "Projects"), path: "/projects" },
+    { name: t("nav.contact", "Contact"), path: "/contact" },
   ];
 
   const socialLinks = [
@@ -60,7 +63,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-50 to-blue-50 relative">
+    <footer className="theme-footer relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
@@ -73,16 +76,14 @@ const Footer = () => {
                 <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Chaima HAMDAOUI
                 </h3>
-                <p className="text-sm text-gray-600">
-                  Junior Full Stack / Mobile Developer
+                <p className="text-sm theme-muted">
+                  {t("footer.role", "Junior Full Stack / Mobile Developer")}
                 </p>
               </div>
             </div>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Third-year Software Engineering and Information Systems student,
-              passionate about web and mobile development. Looking for a final
-              year internship to contribute to innovative software solutions.
+            <p className="theme-muted mb-4 leading-relaxed">
+              {t("footer.description", "Third-year Software Engineering and Information Systems student, passionate about web and mobile development. Looking for a final year internship to contribute to innovative software solutions.")}
             </p>
 
             <div className="flex gap-3">
@@ -92,7 +93,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center text-gray-600 transition-all duration-300 transform hover:scale-110 ${social.color}`}
+                  className={`w-12 h-12 rounded-xl theme-panel shadow-md flex items-center justify-center theme-muted transition-all duration-300 transform hover:scale-110 ${social.color}`}
                   title={social.name}
                 >
                   {social.icon}
@@ -102,8 +103,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">
-              Quick Links
+            <h3 className="text-lg font-bold theme-text mb-4">
+              {t("footer.quickLinks", "Quick Links")}
             </h3>
 
             <ul className="space-y-2">
@@ -111,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center gap-2 group"
+                    className="theme-muted hover:text-blue-600 transition-colors duration-300 flex items-center gap-2 group"
                   >
                     <span className="w-2 h-2 bg-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.name}
@@ -122,13 +123,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">Contact</h3>
+            <h3 className="text-lg font-bold theme-text mb-4">{t("footer.contact", "Contact")}</h3>
 
             <ul className="space-y-3">
               {contactInfo.map((info, index) => (
                 <li
                   key={index}
-                  className="flex items-start gap-3 text-gray-600"
+                  className="flex items-start gap-3 theme-muted"
                 >
                   <span className="mt-1">{info.icon}</span>
                   <span className="text-sm">{info.text}</span>
@@ -138,15 +139,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 my-8"></div>
+        <div className="border-t theme-border my-8"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 text-gray-600 text-sm">
-            <span>© 2026 Chaima HAMDAOUI. All rights reserved.</span>
+          <div className="flex items-center gap-2 theme-muted text-sm">
+            <span>{t("footer.rights", "© 2026 Chaima HAMDAOUI. All rights reserved.")}</span>
           </div>
 
-          <div className="flex items-center gap-2 text-gray-600 text-sm">
-            <span>Made with</span>
+          <div className="flex items-center gap-2 theme-muted text-sm">
+            <span>{t("footer.madeWith", "Made with")}</span>
             <FaHeart className="text-red-500 animate-pulse" />
             <span>React</span>
           </div>

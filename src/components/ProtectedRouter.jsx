@@ -1,15 +1,10 @@
 import { Navigate, useLocation } from "react-router-dom";
 
-export default function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children, isAllowed, redirectPath = "/login" }) {
   const location = useLocation();
 
-  const token = localStorage.getItem("authToken");
-  const user = JSON.parse(localStorage.getItem("user"));
-
-  const isAllowed = token && user?.role === "admin";
-
-  if (!isAllowed && location.pathname !== "/login") {
-    return <Navigate to="/login" replace />;
+  if (!isAllowed && location.pathname !== redirectPath) {
+    return <Navigate to={redirectPath} replace state={{ from: location }} />;
   }
 
   return children;
