@@ -18,17 +18,20 @@ const professionalExperience = [
     title: "Professional Internship",
     company: "All Soft Multimedia",
     location: "Sfax, Tunisia",
-    date: "Feb 2026 – Present",
-    status: "Present",
+    date: "Feb – Jun 2026",
+    status: "Completed",
     subtitle: "Home Services Mobile Application",
-    description: "Leading the development of a full-stack mobile platform connecting clients and service providers.",
-    technologies: ["Flutter", "Spring Boot", "MySQL", "REST API", "WebSocket", "Google Maps"],
+    description: "Led the development of a full-stack mobile platform connecting clients and service providers.",
+    technologies: ["Flutter", "Spring Boot", "MySQL", "JWT", "Spring Security", "REST API", "WebSocket", "Firebase Cloud Messaging", "Google Maps"],
     achievements: [
       "Engineered a cross-platform mobile application using Flutter, integrated with a robust Spring Boot REST API.",
-      "Designed a secure role-based system for clients, providers, and administrators.",
-      "Delivered key features: booking system, authentication, real-time chat (WebSocket), notifications, and live tracking.",
+      "Implemented secure authentication using JWT and Spring Security.",
+      "Developed a matching system connecting clients with service providers.",
+      "Delivered key features: booking system, real-time chat (WebSocket), and live GPS tracking.",
       "Integrated Google Maps for geolocation, navigation, and real-time provider tracking.",
-      "Built an admin dashboard to manage users, validate providers, and monitor complaints."
+      "Integrated push notifications with Firebase Cloud Messaging.",
+      "Built an admin dashboard to manage users and validate providers.",
+      "Performed client review sentiment analysis using an AI model (XLM-RoBERTa).",
     ],
     icon: <FaBriefcase />,
     color: "from-indigo-500 to-purple-500",
@@ -37,7 +40,7 @@ const professionalExperience = [
     title: "Professional Internship",
     company: "International Institute of Technology",
     location: "Sfax, Tunisia",
-    date: "Jul 27 – Sep 1, 2025",
+    date: "Jul 28 – Sep 2, 2025",
     status: "Completed",
     subtitle: "Leave Management Web Application",
     description:
@@ -60,8 +63,8 @@ const education = [
     degree: "Software Engineering and Information Systems",
     institution: "International Institute of Technology",
     location: "Sfax, Tunisia",
-    period: "2023 – Present",
-    status: "3rd Year",
+    period: "2023 – 2026",
+    status: "Final Year",
     description:
       "Training focused on software development, databases, web technologies, mobile development, software architecture, information systems and project-based learning.",
     highlights: [
@@ -88,6 +91,15 @@ const education = [
 ];
 
 const certifications = [
+  {
+    title: "Getting Started with Deep Learning",
+    institution: "NVIDIA",
+    date: "2026",
+    description:
+      "Introductory certification covering deep learning fundamentals and practical model building.",
+    icon: <FaBrain />,
+    color: "from-green-500 to-emerald-500",
+  },
   {
     title: "AWS Academy Graduate – Cloud Foundations",
     institution: "AWS Academy",

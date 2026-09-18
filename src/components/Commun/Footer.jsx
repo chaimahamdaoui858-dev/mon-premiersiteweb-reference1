@@ -19,11 +19,11 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: t("nav.home", "Home"), path: "/" },
-    { name: t("nav.about", "About"), path: "/about" },
-    { name: t("nav.experience", "Experience"), path: "/experience" },
-    { name: t("nav.projects", "Projects"), path: "/projects" },
-    { name: t("nav.contact", "Contact"), path: "/contact" },
+    { name: t("navbar.home", "Home"), path: "/" },
+    { name: t("navbar.about", "About"), path: "/about" },
+    { name: t("navbar.experience", "Experience"), path: "/experience" },
+    { name: t("navbar.projects", "Projects"), path: "/projects" },
+    { name: t("navbar.contact", "Contact"), path: "/contact" },
   ];
 
   const socialLinks = [
@@ -83,7 +83,10 @@ const Footer = () => {
             </div>
 
             <p className="theme-muted mb-4 leading-relaxed">
-              {t("footer.description", "Third-year Software Engineering and Information Systems student, passionate about web and mobile development. Looking for a final year internship to contribute to innovative software solutions.")}
+              {t(
+                "footer.description",
+                "Computer Science graduate specialized in Software Engineering and Information Systems, passionate about web and mobile development. Looking for a job opportunity to contribute to innovative software solutions."
+              )}
             </p>
 
             <div className="flex gap-3">

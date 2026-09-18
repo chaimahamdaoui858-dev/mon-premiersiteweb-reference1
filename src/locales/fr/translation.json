@@ -9,63 +9,77 @@
   "hero": {
     "hello": "Bonjour, je suis",
     "name": "Chaima Hamdaoui",
-    "title": "Étudiante en Ingénierie Logicielle",
-    "description": "Passionnée par la création d'applications web et mobiles modernes avec un accent sur un code propre et l'expérience utilisateur.",
+    "title": "Développeuse Full Stack Junior",
+    "description": "Diplômée en informatique, spécialité Génie Logiciel et Systèmes d'Information. Je conçois des applications web et mobiles modernes avec un code propre et une attention particulière à l'expérience utilisateur.",
     "viewProjects": "Voir mes projets",
     "contactMe": "Me contacter",
     "resume": "Télécharger le CV",
-    "lookingForInternship": "À la recherche d'un stage de fin d'études",
+    "lookingForInternship": "À la recherche d'une opportunité de travail",
     "roles": {
       "fullstack": "Développeuse Full Stack Junior",
       "mobile": "Développeuse Mobile",
-      "student": "Étudiante en Ingénierie Logicielle"
+      "student": "Diplômée en Génie Logiciel"
     },
     "stats": {
       "projects": "Projets terminés",
       "experience": "Années d'expérience",
       "technologies": "Technologies",
-      "year": "Année Universitaire",
-      "internship": "Recherche de stage"
+      "year": "Année de diplôme",
+      "internship": "Recherche d'emploi"
     }
   },
   "about": {
     "badge": "À propos de moi",
     "title": "Qui suis-je ?",
-    "description": "Je suis étudiante en troisième année de Génie Logiciel et Systèmes d'Information à l'Institut International de Technologie de Sfax, passionnée par le développement web, le développement mobile et les solutions logicielles innovantes.",
+    "description": "Je suis Chaima Hamdaoui, développeuse Full Stack Junior, diplômée en Génie Logiciel et Systèmes d'Information à l'Institut International de Technologie de Sfax. Passionnée par le développement web et mobile, j'aime concevoir des applications modernes, utiles et adaptées aux besoins des utilisateurs. Je m'intéresse particulièrement au développement Frontend et Backend, ainsi qu'à la création de solutions logicielles innovantes.",
     "academic": {
       "title": "Profil académique",
-      "subtitle": "Génie Logiciel et Systèmes d'Information",
+      "subtitle": "Licence en Informatique – Génie Logiciel et Systèmes d'Information",
       "desc": "Je développe des applications web et mobiles en utilisant des technologies modernes telles que Flutter, Spring Boot, Laravel, Angular, React, ASP.NET MVC, Unity et MySQL. Mon objectif est de contribuer à des projets logiciels réels tout en renforçant mes compétences techniques.",
       "location": "Sfax, Tunisie",
-      "internship": "À la recherche d'un stage de fin d'études",
+      "internship": "À la recherche d'une opportunité de travail",
       "role": "Développeuse Full Stack / Mobile Junior"
     },
     "internship": {
       "title": "Expérience de stage",
-      "subtitle": "Institut International de Technologie",
-      "projectTitle": "Application Web de Gestion des Congés",
-      "date": "27 juil. – 1 sept. 2025 • Sfax, Tunisie",
+      "subtitle": "All Soft Multimedia – Sfax",
+      "projectTitle": "SmartService – Plateforme de mise en relation entre clients et prestataires",
+      "date": "02 février – 02 juin 2026 • Sfax, Tunisie",
       "tasks": [
-        "Stage de 5 semaines axé sur le développement d'une application web de gestion des congés.",
-        "Développement d'API REST, contrôle d'accès basé sur les rôles et gestion de base de données MySQL.",
-        "Livraison de tableaux de bord pour les employés et les responsables RH avec notifications et suivi des congés."
+        "Développement du backend avec Spring Boot et de l'application mobile avec Flutter.",
+        "Mise en place d'une authentification sécurisée avec JWT et Spring Security, chat temps réel et suivi GPS.",
+        "Intégration des notifications push (Firebase Cloud Messaging) et analyse des avis clients par IA (XLM-RoBERTa)."
       ]
     },
     "skills": {
       "title": "Compétences pertinentes",
       "items": [
         "Développement d'API REST",
-        "Contrôle d'accès basé sur les rôles",
+        "Authentification avec JWT et Spring Security",
         "Conception de bases de données",
-        "Développement d'interfaces mobiles",
+        "Développement d'interfaces mobiles avec Flutter",
         "Test d'API avec Postman",
-        "Architecture logicielle"
+        "Architecture microservices"
+      ]
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": [
+        "Résolution de problèmes",
+        "Apprentissage continu",
+        "Esprit d'équipe",
+        "Maîtrise des outils informatiques",
+        "Saisie et traitement de données"
       ]
     },
     "tech": {
       "badge": "Technologies",
       "title": "Compétences techniques",
       "subtitle": "Technologies, outils et langages que j'utilise pour donner vie à des idées."
+    },
+    "interests": {
+      "title": "Centres d'intérêt",
+      "text": "Technologie et programmation | Peinture | Sport | Compétitions et défis"
     },
     "viewProjects": "Voir mes projets"
   },
@@ -79,46 +93,51 @@
     "activities": "Activités Extrascolaires",
     "jobs": [
       {
-        "title": "Stage Professionnel",
+        "title": "Stage de Projet de Fin d'Études",
         "company": "All Soft Multimedia",
         "location": "Sfax, Tunisie",
-        "date": "Fév 2026 – Présent",
-        "status": "Présent",
-        "subtitle": "Application Mobile de Services à Domicile",
-        "description": "Direction du développement d'une plateforme mobile full-stack reliant les clients et les prestataires de services.",
+        "date": "02 février – 02 juin 2026",
+        "status": "Terminé",
+        "subtitle": "SmartService – Plateforme intelligente de mise en relation entre clients et prestataires de services",
+        "description": "Développement d'une plateforme mobile full-stack reliant les clients et les prestataires de services. Technologies : Spring Boot, Flutter, MySQL, JWT, Spring Security, WebSocket, Firebase Cloud Messaging, Google Maps.",
         "achievements": [
-          "Conception d'une application mobile multiplateforme avec Flutter, intégrée à une API REST Spring Boot robuste.",
-          "Conception d'un système sécurisé basé sur les rôles pour les clients, les prestataires et les administrateurs.",
-          "Livraison de fonctionnalités clés : système de réservation, authentification, chat en temps réel (WebSocket), notifications et suivi en direct.",
-          "Intégration de Google Maps pour la géolocalisation, la navigation et le suivi en temps réel des prestataires.",
-          "Création d'un tableau de bord administrateur pour gérer les utilisateurs, valider les prestataires et suivre les réclamations."
+          "Développement du backend avec Spring Boot et d'une API REST consommée par l'application mobile.",
+          "Développement de l'application mobile multiplateforme avec Flutter.",
+          "Mise en place d'une authentification sécurisée avec JWT et Spring Security.",
+          "Développement d'un système de matching entre clients et prestataires.",
+          "Livraison de fonctionnalités clés : réservation, chat en temps réel (WebSocket) et suivi GPS en direct.",
+          "Intégration de Google Maps pour la géolocalisation, la navigation et le suivi des prestataires.",
+          "Intégration des notifications push avec Firebase Cloud Messaging.",
+          "Développement d'un tableau de bord d'administration (gestion des utilisateurs, validation des prestataires).",
+          "Analyse des avis clients à l'aide d'un modèle d'intelligence artificielle (XLM-RoBERTa)."
         ]
       },
       {
-        "title": "Stage Professionnel",
-        "company": "Institut International de Technologie",
+        "title": "Stage d'été",
+        "company": "Institut International de Technologie (IIT), Sfax",
         "location": "Sfax, Tunisie",
-        "date": "27 juil. – 1 sept. 2025",
+        "date": "28 juillet – 2 septembre 2025",
         "status": "Terminé",
         "subtitle": "Application Web de Gestion des Congés",
-        "description": "Stage de 5 semaines axé sur le développement d'une application web de gestion des congés pour les employés et les responsables RH.",
+        "description": "Stage de 5 semaines au Département Informatique, axé sur le développement d'une application web de gestion des congés pour les employés et les responsables RH. Technologies : Laravel, Angular, MySQL, API REST.",
         "achievements": [
-          "Développement d'API REST pour la gestion des demandes de congé.",
-          "Mise en œuvre du contrôle d'accès basé sur les rôles pour les employés et les responsables RH.",
-          "Gestion de la structure de la base de données MySQL et des données de l'application.",
-          "Livraison de tableaux de bord pour les employés et les responsables RH.",
-          "Ajout de notifications et suivi de 3 types de congés : maladie, vacances et congé personnel."
+          "Développement du backend avec Laravel.",
+          "Développement du frontend avec Angular.",
+          "Création et consommation d'API REST.",
+          "Gestion des rôles et des permissions.",
+          "Développement des tableaux de bord pour les employés et les responsables RH.",
+          "Gestion des demandes de congés, du suivi des statuts et des notifications."
         ]
       }
     ],
     "education": [
       {
-        "degree": "Génie Logiciel et Systèmes d'Information",
-        "institution": "Institut International de Technologie",
+        "degree": "Diplôme National de Licence en Informatique",
+        "institution": "Institut International de Technologie (IIT), Sfax",
         "location": "Sfax, Tunisie",
-        "period": "2023 – Présent",
-        "status": "3ème Année",
-        "description": "Formation axée sur le développement logiciel, les bases de données, les technologies web, le développement mobile, l'architecture logicielle, les systèmes d'information et l'apprentissage par projet.",
+        "period": "2023 – 2026",
+        "status": "Diplômée",
+        "description": "Spécialité Génie Logiciel et Systèmes d'Information : développement logiciel, bases de données, technologies web, développement mobile, architecture logicielle, systèmes d'information et apprentissage par projet.",
         "highlights": [
           "Développement logiciel",
           "Développement web et mobile",
@@ -142,10 +161,16 @@
     ],
     "certificationItems": [
       {
+        "title": "Getting Started with Deep Learning",
+        "institution": "NVIDIA",
+        "date": "2026",
+        "description": "Certification d'introduction couvrant les fondamentaux du deep learning et la construction pratique de modèles."
+      },
+      {
         "title": "AWS Academy Graduate – Cloud Foundations",
         "institution": "AWS Academy",
         "date": "20/12/2025",
-        "description": "Certification validant les fondamentaux du cloud computing, incluant les services essentiels d’AWS (EC2, S3, IAM), les concepts d’architecture cloud, ainsi que les bonnes pratiques de sécurité et de déploiement."
+        "description": "Certification validant les fondamentaux du cloud computing, incluant les services essentiels d'AWS (EC2, S3, IAM), les concepts d'architecture cloud, ainsi que les bonnes pratiques de sécurité et de déploiement."
       },
       {
         "title": "AI Tools for Coding",
@@ -177,36 +202,37 @@
     "galleryTitle": "Galerie du projet",
     "list": [
       {
-        "title": "Plateforme de Services à Domicile – App Mobile",
-        "description": "Une application mobile de services à domicile permettant aux clients de réserver des prestataires, suivre les positions, chatter en temps réel et recevoir des notifications.",
+        "title": "SmartService – Application Mobile de Services à Domicile",
+        "description": "Plateforme intelligente de mise en relation entre clients et prestataires : réservation, suivi de position, chat en temps réel et notifications. Développée avec Flutter, Spring Boot, MySQL, JWT, WebSocket, Firebase Cloud Messaging et Google Maps.",
         "status": "Projet de Fin d'Études",
         "features": [
-          "Authentification avec rôles client, prestataire et administrateur",
-          "Flux de réservation de service à domicile",
+          "Authentification avec rôles client, prestataire et administrateur (JWT + Spring Security)",
+          "Réservation de services et matching clients / prestataires",
           "Chat en temps réel via WebSocket",
-          "Notifications push pour les messages et réservations",
-          "Suivi GPS et affichage d'itinéraire sur la carte",
-          "Tableau de bord administrateur pour la validation des prestataires"
+          "Notifications push avec Firebase Cloud Messaging",
+          "Suivi GPS et affichage d'itinéraire avec Google Maps",
+          "Tableau de bord administrateur pour la validation des prestataires",
+          "Analyse des avis clients avec un modèle d'IA (XLM-RoBERTa)"
         ]
       },
       {
         "title": "Application Web de Gestion des Congés",
-        "description": "Application web de gestion des congés développée lors d'un stage à l'IIT Sfax, avec gestion des rôles, tableaux de bord et notifications.",
+        "description": "Application web de gestion des congés développée lors d'un stage à l'IIT Sfax avec Laravel, Angular, MySQL et API REST : gestion des rôles, tableaux de bord et notifications.",
         "status": "Terminé",
         "features": [
+          "Backend Laravel et frontend Angular",
           "Authentification et contrôle d'accès basé sur les rôles",
-          "Gestion des demandes de congé",
+          "Gestion des demandes de congé et suivi des statuts",
           "Tableaux de bord pour employés et responsables RH",
-          "Suivi de 3 types de congés",
-          "Notifications et gestion des statuts"
+          "Notifications et intégration d'API REST"
         ]
       },
       {
         "title": "Centre Médical – Architecture Microservices",
-        "description": "Un système backend basé sur une architecture microservices pour la gestion des patients, médecins et rendez-vous.",
+        "description": "Système backend basé sur une architecture microservices (Spring Boot, Eureka, API Gateway, API REST) pour la gestion des patients, médecins et rendez-vous.",
         "status": "Terminé",
         "features": [
-          "Architecture microservices",
+          "Architecture microservices avec Spring Boot",
           "Découverte de services avec Eureka",
           "Routage centralisé avec API Gateway",
           "API REST pour la communication inter-services",
@@ -215,11 +241,11 @@
       },
       {
         "title": "Application de Gestion de Pharmacie",
-        "description": "Application web de gestion de pharmacie pour gérer les médicaments, les ordonnances et les comptes utilisateurs.",
+        "description": "Application web de gestion de pharmacie développée avec ASP.NET MVC : ordonnances électroniques, suivi des médicaments et comptes utilisateurs.",
         "status": "Terminé",
         "features": [
-          "Gestion des médicaments",
-          "Gestion des ordonnances",
+          "Suivi des médicaments",
+          "Gestion des ordonnances électroniques",
           "Gestion des comptes utilisateurs",
           "Opérations CRUD complètes",
           "Architecture MVC"
@@ -227,7 +253,7 @@
       },
       {
         "title": "Study With Me – Application Mobile",
-        "description": "Application mobile conçue pour les étudiants afin de planifier les sessions d'étude et recevoir des rappels.",
+        "description": "Application mobile Flutter conçue pour les étudiants afin de planifier et gérer les sessions d'étude, avec notifications et interface intuitive.",
         "status": "Terminé",
         "features": [
           "Planification des sessions d'étude",
@@ -277,7 +303,7 @@
   },
   "footer": {
     "role": "Développeuse Full Stack / Mobile Junior",
-    "description": "Étudiante en troisième année d'ingénierie logicielle et systèmes d'information, passionnée par le développement web et mobile. À la recherche d'un stage de fin d'études pour contribuer à des solutions logicielles innovantes.",
+    "description": "Diplômée en Informatique, spécialité Génie Logiciel et Systèmes d'Information, passionnée par le développement web et mobile. À la recherche d'une opportunité de travail pour contribuer à des solutions logicielles innovantes.",
     "quickLinks": "Liens Rapides",
     "contact": "Contact",
     "rights": "© 2026 Chaima HAMDAOUI. Tous droits réservés.",
@@ -286,11 +312,11 @@
   "contact": {
     "badge": "Contact",
     "title": "Me Contacter",
-    "subtitle": "Une opportunité de stage de fin d'études, une question ou un projet ? N'hésitez pas à me contacter.",
+    "subtitle": "Une opportunité de travail, une question ou un projet ? N'hésitez pas à me contacter.",
     "socialMedia": "Réseaux Sociaux",
     "availability": {
       "title": "💡 Disponibilité",
-      "text": "Je suis actuellement à la recherche d'un stage de fin d'études et disponible pour discuter de nouvelles opportunités."
+      "text": "Je suis actuellement à la recherche d'une opportunité de travail et disponible pour discuter de nouvelles opportunités."
     },
     "form": {
       "title": "M'envoyer un message",

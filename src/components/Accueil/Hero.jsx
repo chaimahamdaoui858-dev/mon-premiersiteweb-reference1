@@ -35,7 +35,7 @@ const Hero = () => {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
               <span className="text-sm font-medium text-gray-700">
-                {t("hero.lookingForInternship", "Looking for a Final Year Internship")}
+                {t("hero.lookingForInternship", "Looking for a Job Opportunity")}
               </span>
             </div>
 
@@ -232,7 +232,7 @@ const Hero = () => {
 
           <Reveal className="glass-card rounded-xl shadow-lg p-6 text-center transform hover:scale-105 transition-all duration-300 hover-float" delay={160}>
             <div className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">
-              3rd
+              Final
             </div>
             <div className="text-gray-600 font-medium">{t("hero.stats.year", "Academic Year")}</div>
           </Reveal>
@@ -242,7 +242,7 @@ const Hero = () => {
               PFE
             </div>
             <div className="text-gray-600 font-medium">
-              {t("hero.stats.internship", "Internship Search")}
+              {t("hero.stats.internship", "Job Search")}
             </div>
           </Reveal>
         </div>

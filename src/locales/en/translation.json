@@ -9,63 +9,77 @@
   "hero": {
     "hello": "Hello, I'm",
     "name": "Chaima Hamdaoui",
-    "title": "Software Engineering Student",
-    "description": "Passionate about building modern web and mobile applications with focus on clean code and user experience.",
+    "title": "Junior Full Stack Developer",
+    "description": "Computer Science graduate specialized in Software Engineering and Information Systems. I build modern web and mobile applications with a focus on clean code and user experience.",
     "viewProjects": "View My Projects",
     "contactMe": "Contact Me",
     "resume": "Download CV",
-    "lookingForInternship": "Looking for a Final Year Internship",
+    "lookingForInternship": "Looking for a Job Opportunity",
     "roles": {
       "fullstack": "Junior Full Stack Developer",
       "mobile": "Mobile Developer",
-      "student": "Software Engineering Student"
+      "student": "Software Engineering Graduate"
     },
     "stats": {
       "projects": "Completed Projects",
       "experience": "Years Experience",
       "technologies": "Technologies",
-      "year": "Academic Year",
-      "internship": "Internship Search"
+      "year": "Graduation Year",
+      "internship": "Job Search"
     }
   },
   "about": {
     "badge": "About Me",
     "title": "Who Am I?",
-    "description": "I am a third-year Software Engineering and Information Systems student at the International Institute of Technology of Sfax, passionate about web development, mobile development, and innovative software solutions.",
+    "description": "I am Chaima Hamdaoui, a Junior Full Stack Developer, graduate in Software Engineering and Information Systems from the International Institute of Technology of Sfax. Passionate about web and mobile development, I enjoy designing modern applications that are useful and tailored to users' needs. I am particularly interested in Frontend and Backend development, as well as building innovative software solutions.",
     "academic": {
       "title": "Academic Profile",
-      "subtitle": "Software Engineering and Information Systems",
-      "desc": "I develop web and mobile applications using modern technologies such as Flutter, Spring Boot, Laravel, Angular, React, ASP.NET MVC, Unity, and MySQL. My goal is to contribute to real software projects while strengthening my technical skills.",
+      "subtitle": "Bachelor's Degree in Computer Science – Software Engineering and Information Systems",
+      "desc": "I develop web and mobile applications using modern technologies such as Flutter, Spring Boot, Laravel, Angular, React, ASP.NET MVC, Unity and MySQL. My goal is to contribute to real software projects while continuing to strengthen my technical skills.",
       "location": "Sfax, Tunisia",
-      "internship": "Looking for a Final Year Internship",
+      "internship": "Looking for a Job Opportunity",
       "role": "Junior Full Stack / Mobile Developer"
     },
     "internship": {
       "title": "Internship Experience",
-      "subtitle": "International Institute of Technology",
-      "projectTitle": "Leave Management Web Application",
-      "date": "Jul 27 – Sep 1, 2025 • Sfax, Tunisia",
+      "subtitle": "All Soft Multimedia – Sfax",
+      "projectTitle": "SmartService – Platform Connecting Clients and Service Providers",
+      "date": "Feb 2 – Jun 2, 2026 • Sfax, Tunisia",
       "tasks": [
-        "Completed a 5-week internship focused on developing a leave management web application.",
-        "Developed REST APIs, role-based access control, and MySQL database management.",
-        "Delivered dashboards for employees and HR managers with notifications and leave tracking."
+        "Built a Spring Boot backend and a cross-platform Flutter mobile application.",
+        "Implemented secure authentication with JWT and Spring Security, plus real-time chat and GPS tracking.",
+        "Integrated Firebase Cloud Messaging push notifications and an AI review analysis model (XLM-RoBERTa)."
       ]
     },
     "skills": {
       "title": "Relevant Skills",
       "items": [
         "REST API development",
-        "Role-based access control",
+        "Authentication with JWT and Spring Security",
         "Database design",
-        "Mobile UI development",
+        "Mobile UI development with Flutter",
         "API testing with Postman",
-        "Software architecture"
+        "Microservices architecture"
+      ]
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": [
+        "Problem solving",
+        "Continuous learning",
+        "Teamwork",
+        "Strong command of IT tools",
+        "Data entry and processing"
       ]
     },
     "tech": {
       "badge": "Tech Stack",
       "title": "Technical Skills",
       "subtitle": "Technologies, tools, and languages I use to bring ideas to life."
+    },
+    "interests": {
+      "title": "Interests",
+      "text": "Technology and programming | Painting | Sport | Competitions and challenges"
     },
     "viewProjects": "View My Projects"
   },
@@ -79,46 +93,51 @@
     "activities": "Extracurricular Activities",
     "jobs": [
       {
-        "title": "Professional Internship",
+        "title": "Final Year Project Internship",
         "company": "All Soft Multimedia",
         "location": "Sfax, Tunisia",
-        "date": "Feb 2026 – Present",
-        "status": "Present",
-        "subtitle": "Home Services Mobile Application",
-        "description": "Leading the development of a full-stack mobile platform connecting clients and service providers.",
+        "date": "Feb 2 – Jun 2, 2026",
+        "status": "Completed",
+        "subtitle": "SmartService – Platform Connecting Clients and Service Providers",
+        "description": "Led the development of a full-stack mobile platform connecting clients and service providers. Technologies: Spring Boot, Flutter, MySQL, JWT, Spring Security, WebSocket, Firebase Cloud Messaging, Google Maps.",
         "achievements": [
-          "Engineered a cross-platform mobile application using Flutter, integrated with a robust Spring Boot REST API.",
-          "Designed a secure role-based system for clients, providers, and administrators.",
-          "Delivered key features: booking system, authentication, real-time chat (WebSocket), notifications, and live tracking.",
-          "Integrated Google Maps for geolocation, navigation, and real-time provider tracking.",
-          "Built an admin dashboard to manage users, validate providers, and monitor complaints."
+          "Developed the backend with Spring Boot and a REST API consumed by the mobile app.",
+          "Built a cross-platform mobile application with Flutter.",
+          "Implemented secure authentication using JWT and Spring Security.",
+          "Developed a matching system connecting clients with service providers.",
+          "Delivered key features: booking system, real-time chat (WebSocket) and live GPS tracking.",
+          "Integrated Google Maps for geolocation, navigation and real-time provider tracking.",
+          "Integrated push notifications with Firebase Cloud Messaging.",
+          "Built an admin dashboard to manage users and validate providers.",
+          "Performed client review sentiment analysis using an AI model (XLM-RoBERTa)."
         ]
       },
       {
-        "title": "Professional Internship",
-        "company": "International Institute of Technology",
+        "title": "Summer Internship",
+        "company": "International Institute of Technology (IIT), Sfax",
         "location": "Sfax, Tunisia",
-        "date": "Jul 27 – Sep 1, 2025",
+        "date": "Jul 28 – Sep 2, 2025",
         "status": "Completed",
         "subtitle": "Leave Management Web Application",
-        "description": "Completed a 5-week internship focused on developing a leave management web application for employees and HR managers.",
+        "description": "Five-week internship in the Computer Science Department, developing a leave management web application for employees and HR managers. Technologies: Laravel, Angular, MySQL, REST API.",
         "achievements": [
-          "Developed REST APIs for leave request management.",
-          "Implemented role-based access control for employees and HR managers.",
-          "Managed MySQL database structure and application data.",
+          "Developed the backend with Laravel.",
+          "Developed the frontend with Angular.",
+          "Created and consumed REST APIs for leave request management.",
+          "Implemented role and permission management for employees and HR managers.",
           "Delivered dashboards for employees and HR managers.",
-          "Added notifications and tracked 3 leave types: sick leave, vacation and personal leave."
+          "Managed leave requests and status tracking with notifications."
         ]
       }
     ],
     "education": [
       {
-        "degree": "Software Engineering and Information Systems",
-        "institution": "International Institute of Technology",
+        "degree": "National Bachelor's Degree in Computer Science",
+        "institution": "International Institute of Technology (IIT), Sfax",
         "location": "Sfax, Tunisia",
-        "period": "2023 – Present",
-        "status": "3rd Year",
-        "description": "Training focused on software development, databases, web technologies, mobile development, software architecture, information systems and project-based learning.",
+        "period": "2023 – 2026",
+        "status": "Graduated",
+        "description": "Specialization in Software Engineering and Information Systems: software development, databases, web technologies, mobile development, software architecture, information systems and project-based learning.",
         "highlights": [
           "Software development",
           "Web and mobile development",
@@ -141,6 +160,12 @@
       }
     ],
     "certificationItems": [
+      {
+        "title": "Getting Started with Deep Learning",
+        "institution": "NVIDIA",
+        "date": "2026",
+        "description": "Introductory certification covering deep learning fundamentals and practical model building."
+      },
       {
         "title": "AWS Academy Graduate – Cloud Foundations",
         "institution": "AWS Academy",
@@ -177,36 +202,37 @@
     "galleryTitle": "Project Gallery",
     "list": [
       {
-        "title": "Home Services Platform – Mobile Application",
-        "description": "A home services mobile application that allows clients to book service providers, track locations, chat in real time and receive notifications.",
+        "title": "SmartService – Home Services Mobile Application",
+        "description": "An intelligent home services platform that connects clients with service providers: booking, live location tracking, real-time chat and push notifications. Built with Flutter, Spring Boot, MySQL, JWT, WebSocket, Firebase Cloud Messaging and Google Maps.",
         "status": "Final Year Project",
         "features": [
-          "Authentication with client, provider and admin roles",
-          "Home service booking flow",
+          "Authentication with client, provider and admin roles (JWT + Spring Security)",
+          "Home service booking flow and client–provider matching",
           "Real-time chat using WebSocket",
-          "Push notifications for messages and bookings",
-          "GPS tracking and route display on the map",
-          "Admin dashboard for provider validation"
+          "Push notifications with Firebase Cloud Messaging",
+          "GPS tracking and route display with Google Maps",
+          "Admin dashboard for provider validation",
+          "Review sentiment analysis with an AI model (XLM-RoBERTa)"
         ]
       },
       {
         "title": "Leave Management Web Application",
-        "description": "A leave management web application developed during a professional internship at IIT Sfax, with role management, dashboards and notifications.",
+        "description": "A leave management web application developed during an internship at IIT Sfax, built with Laravel, Angular, MySQL and REST APIs, with role management, dashboards and notifications.",
         "status": "Completed",
         "features": [
+          "Laravel backend and Angular frontend",
           "Authentication and role-based access control",
-          "Leave request management",
+          "Leave request management and status tracking",
           "Dashboards for employees and HR managers",
-          "Tracking of 3 leave types",
-          "Notifications and status management"
+          "Notifications and REST API integration"
         ]
       },
       {
         "title": "Medical Center – Microservices Architecture",
-        "description": "A backend system based on a microservices architecture for managing patients, doctors and appointments.",
+        "description": "A backend system based on a microservices architecture (Spring Boot, Eureka, API Gateway, REST API) for managing patients, doctors and appointments.",
         "status": "Completed",
         "features": [
-          "Microservices architecture",
+          "Microservices architecture with Spring Boot",
           "Service discovery with Eureka",
           "Centralized routing using API Gateway",
           "REST APIs for communication between services",
@@ -215,11 +241,11 @@
       },
       {
         "title": "Pharmacy Management Application",
-        "description": "A pharmacy management web application for managing medicines, prescriptions and user accounts.",
+        "description": "A pharmacy management web application built with ASP.NET MVC for managing electronic prescriptions, medicine tracking and user accounts.",
         "status": "Completed",
         "features": [
-          "Medicine management",
-          "Prescription management",
+          "Medicine tracking",
+          "Electronic prescription management",
           "User account management",
           "Complete CRUD operations",
           "MVC architecture"
@@ -227,7 +253,7 @@
       },
       {
         "title": "Study With Me – Mobile Application",
-        "description": "A mobile application designed for students to plan study sessions and receive reminders.",
+        "description": "A Flutter mobile application designed for students to plan and manage study sessions with reminders and an intuitive interface.",
         "status": "Completed",
         "features": [
           "Study session planning",
@@ -277,7 +303,7 @@
   },
   "footer": {
     "role": "Junior Full Stack / Mobile Developer",
-    "description": "Third-year Software Engineering and Information Systems student, passionate about web and mobile development. Looking for a final year internship to contribute to innovative software solutions.",
+    "description": "Computer Science graduate specialized in Software Engineering and Information Systems, passionate about web and mobile development. Looking for a job opportunity to contribute to innovative software solutions.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "© 2026 Chaima HAMDAOUI. All rights reserved.",
@@ -286,11 +312,11 @@
   "contact": {
     "badge": "Contact",
     "title": "Contact Me",
-    "subtitle": "A final year internship opportunity, a question or a project? Feel free to contact me.",
+    "subtitle": "A job opportunity, a question or a project? Feel free to contact me.",
     "socialMedia": "Social Media",
     "availability": {
       "title": "💡 Availability",
-      "text": "I am currently looking for a final year internship and available to discuss new opportunities."
+      "text": "I am currently looking for a job opportunity and available to discuss new opportunities."
     },
     "form": {
       "title": "Send Me a Message",

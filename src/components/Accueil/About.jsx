@@ -21,8 +21,14 @@ import {
   FaGitAlt,
   FaGithub,
   FaAws,
-  FaGamepad,
   FaChartBar,
+  FaShieldAlt,
+  FaKey,
+  FaComments,
+  FaMapMarkedAlt,
+  FaExchangeAlt,
+  FaUsers,
+  FaBrain,
 } from "react-icons/fa";
 import {
   SiFlutter,
@@ -35,7 +41,9 @@ import {
   SiUnity,
   SiTalend,
   SiDart,
+  SiFirebase,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 import Reveal from "../Commun/Reveal.jsx";
 
 // ─── Skills data: each item has icon + name + color ──────────────────
@@ -49,6 +57,7 @@ const skills = [
       { name: "C#", icon: <FaCode />, iconColor: "#68217A" },
       { name: "PHP", icon: <FaPhp />, iconColor: "#777BB4" },
       { name: "JavaScript", icon: <FaJsSquare />, iconColor: "#F7DF1E" },
+      { name: "Dart", icon: <SiDart />, iconColor: "#0175C2" },
       { name: "SQL", icon: <FaDatabase />, iconColor: "#336791" },
       { name: "HTML", icon: <FaHtml5 />, iconColor: "#E34F26" },
       { name: "CSS", icon: <FaCss3Alt />, iconColor: "#1572B6" },
@@ -65,6 +74,19 @@ const skills = [
       { name: "Angular", icon: <FaAngular />, iconColor: "#DD0031" },
       { name: "React", icon: <FaReact />, iconColor: "#61DAFB" },
       { name: "ASP.NET", icon: <SiDotnet />, iconColor: "#512BD4" },
+    ],
+  },
+  {
+    title: "Backend & Integrations",
+    icon: <FaShieldAlt />,
+    color: "from-sky-500 to-blue-600",
+    items: [
+      { name: "REST API", icon: <FaExchangeAlt />, iconColor: "#0EA5E9" },
+      { name: "JWT", icon: <FaKey />, iconColor: "#D63AFF" },
+      { name: "Spring Security", icon: <FaShieldAlt />, iconColor: "#6DB33F" },
+      { name: "WebSocket", icon: <FaComments />, iconColor: "#1E88E5" },
+      { name: "Firebase", icon: <SiFirebase />, iconColor: "#FFCA28" },
+      { name: "Google Maps", icon: <FaMapMarkedAlt />, iconColor: "#34A853" },
     ],
   },
   {
@@ -92,15 +114,15 @@ const skills = [
     ],
   },
   {
-    title: "Other Technologies",
+    title: "BI, Cloud & AI",
     icon: <FaServer />,
     color: "from-indigo-500 to-purple-500",
     items: [
       { name: "Power BI", icon: <FaChartBar />, iconColor: "#F2C811" },
       { name: "Talend", icon: <SiTalend />, iconColor: "#1675BC" },
       { name: "AWS", icon: <FaAws />, iconColor: "#FF9900" },
+      { name: "Deep Learning", icon: <FaBrain />, iconColor: "#7B4FFF" },
       { name: "Unity", icon: <SiUnity />, iconColor: "#222222" },
-      { name: "ML", icon: <FaServer />, iconColor: "#7B4FFF" },
     ],
   },
   {
@@ -114,17 +136,6 @@ const skills = [
     ],
   },
 ];
-
-const strengths = [
-  "REST API development",
-  "Role-based access control",
-  "Database design",
-  "Mobile UI development",
-  "API testing with Postman",
-  "Software architecture",
-];
-
-import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { t } = useTranslation();
@@ -148,7 +159,10 @@ const About = () => {
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            {t("about.description")}
+            {t(
+              "about.description",
+              "I am Chaima Hamdaoui, a Junior Full Stack Developer, graduate in Software Engineering and Information Systems from the International Institute of Technology of Sfax. Passionate about web and mobile development, I enjoy designing modern applications that are useful and tailored to users' needs. I am particularly interested in Frontend and Backend development, as well as building innovative software solutions."
+            )}
           </p>
         </Reveal>
 
@@ -180,7 +194,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <FaBriefcase className="text-purple-600" />
-                <span>{t("about.academic.internship", "Looking for a Final Year Internship")}</span>
+                <span>{t("about.academic.internship", "Looking for a Job Opportunity")}</span>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <FaCheckCircle className="text-green-600" />
@@ -191,17 +205,20 @@ const About = () => {
             <div className="mt-8 pt-6 border-t theme-border border-gray-200/50">
               <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center gap-2">
                 <span className="w-8 h-px bg-gray-300"></span>
-                INTERESTS
+                {t("about.interests.title", "Interests")}
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed font-medium bg-gradient-to-r from-blue-500/10 to-purple-500/10 px-4 py-3 rounded-xl border border-blue-100/50 dark:border-blue-900/20">
-                Technology and programming <span className="text-blue-500 mx-1">|</span> Painting <span className="text-blue-500 mx-1">|</span> Music <span className="text-blue-500 mx-1">|</span> Competitions and challenges
+                {t(
+                  "about.interests.text",
+                  "Technology and programming | Painting | Sport | Competitions and challenges"
+                )}
               </p>
             </div>
           </Reveal>
         </div>
 
         {/* ── Relevant Skills Banner ───────────────────────────── */}
-        <Reveal className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-8 mb-16 text-white hover-float" delay={80}>
+        <Reveal className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-8 mb-10 text-white hover-float" delay={80}>
           <h3 className="text-3xl font-bold mb-6 text-center">
             {t("about.skills.title", "Relevant Skills")}
           </h3>
@@ -218,8 +235,31 @@ const About = () => {
           </div>
         </Reveal>
 
+        {/* ── Soft Skills ──────────────────────────────────────── */}
+        <Reveal className="glass-card-strong rounded-2xl p-8 mb-16 border theme-border hover-float" delay={100}>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center text-white text-xl shadow-lg">
+              <FaUsers />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900">
+              {t("about.soft.title", "Soft Skills")}
+            </h3>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {[0, 1, 2, 3, 4].map((index) => (
+              <span
+                key={index}
+                className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 glass-card border theme-border"
+              >
+                {t(`about.soft.items.${index}`)}
+              </span>
+            ))}
+          </div>
+        </Reveal>
+
         {/* ═══════════════════════════════════════════════════════════
-            TECHNICAL SKILLS — ICON CARDS (PREMIUM DESIGN)
+            TECHNICAL SKILLS — ICON CARDS
             ═══════════════════════════════════════════════════════════ */}
         <div>
           <Reveal className="text-center mb-12">
@@ -300,7 +340,7 @@ const About = () => {
             href="/projects"
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover-float"
           >
-            View My Projects
+            {t("about.viewProjects", "View My Projects")}
           </a>
         </Reveal>
       </div>
